@@ -4,9 +4,9 @@ import { AppContainer } from 'react-hot-loader';
 import Layout from '../../framework/layout';
 // https://github.com/gaearon/react-hot-loader/issues/525
 import Container from './container';
-import { HomePageProps } from '../../framework/type';
+import { IndexPageProps } from '../../framework/type';
 
-class App extends Component<HomePageProps, any> {
+class App extends Component<IndexPageProps, any> {
   render() {
     return (
       <Layout {...this.props}>

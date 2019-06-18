@@ -1,7 +1,7 @@
 import React from 'react';
-import { HomeProps } from '../../framework/type';
-import './home.less';
-export default function Container(props: HomeProps) {
+import { HomePageProps } from '../../framework/type';
+import './zstyle.less';
+export default function Container(props: HomePageProps) {
   return (
     <div>
       <div>

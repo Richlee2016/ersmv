@@ -1,25 +1,26 @@
-"use strict";
+'use strict'
 // https://www.yuque.com/easy-team/egg-react/config
-const path = require("path");
-const resolve = filepath => path.resolve(__dirname, filepath);
+const path = require('path')
+const resolve = filepath => path.resolve(__dirname, filepath)
 module.exports = {
-  devtool: "eval",
+  devtool: 'eval',
   entry: {
-    home: "app/web/page/home/index.tsx"
+    index: 'app/web/page/index/index.tsx',
+    home: 'app/web/page/home/index.tsx'
   },
-  lib: ["react", "react-dom"],
+  lib: ['react', 'react-dom'],
   loaders: {
     babel: {
-      include: [resolve("app/web"), resolve("node_modules")]
+      include: [resolve('app/web'), resolve('node_modules')]
     },
     less: {
-      include: [resolve("app/web"), resolve("node_modules")],
+      include: [resolve('app/web'), resolve('node_modules')],
       options: {
         javascriptEnabled: true,
         modifyVars: {
-          "primary-color": "red",
-          "link-color": "#1DA57A",
-          "border-radius-base": "2px"
+          'primary-color': 'red',
+          'link-color': '#1DA57A',
+          'border-radius-base': '2px'
         }
       }
     },
@@ -28,7 +29,7 @@ module.exports = {
   plugins: {
     imagemini: false
   },
-  done() {
-    console.log("---webpack compile finish---");
+  done () {
+    console.log('---webpack compile finish---')
   }
-};
+}
