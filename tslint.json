@@ -1,25 +1,14 @@
 {
-    "defaultSeverity": "error",
-    "extends": [
-      "tslint:recommended"
-    ],
-    "jsRules": {},
-    "rules": {
-      "member-access": false, 
-      "ordered-imports": false,
-      "trailing-comma": false,
-      "quotemark": [true, "single", "jsx-double"],
-      "eofline": false,
-      "object-literal-sort-keys": false,
-      "interface-name": false,
-      "arrow-parens": false,
-      "no-console": false,
-      "max-line-length": false,
-      "only-arrow-functions": false,
-      "max-classes-per-file": [true, 3, "exclude-class-expressions"]
-    },
-    "paths": {
-      "component": "app/web/component"
-    },
-    "rulesDirectory": ["app"]
+  "extends": [
+    "tslint-eslint-rules",
+    "tslint-plugin-prettier",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "prettier": true,
+    "no-console": false,
+    "no-unused-variable": true,
+    "no-unused-expression": [true, "allow-new", "allow-fast-null-checks"],
+    "no-trailing-whitespace": true
   }
+}

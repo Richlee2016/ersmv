@@ -1,11 +1,11 @@
 export default {
   cors: {
-    package: 'egg-cors'
+    package: 'egg-cors',
   },
   webpack: {
-    package: 'egg-webpack'
+    package: 'egg-webpack',
   },
-  webpackreact : {
-    package: 'egg-webpack-react'
-  }
+  webpackreact: {
+    package: 'egg-webpack-react',
+  },
 };

@@ -1,5 +1,5 @@
 export default {
   reactssr: {
-    package: 'egg-view-react-ssr'
-  }
+    package: 'egg-view-react-ssr',
+  },
 };
