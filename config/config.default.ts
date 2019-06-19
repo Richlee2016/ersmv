@@ -26,6 +26,11 @@ export default function(app: EggAppConfig) {
     // 'access'
   ];
 
+  exports.monoose = {
+    url: 'mongodb://120.79.228.82:27017/wechat',
+    options: {},
+  };
+
   exports.reactssr = {
     layout: path.join(app.baseDir, 'app/web/view/layout.html'),
   };

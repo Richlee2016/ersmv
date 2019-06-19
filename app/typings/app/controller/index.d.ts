@@ -2,10 +2,12 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
-import ExportHome from '../../../app/controller/home';
+import ExportHome from '../../../controller/home';
+import ExportMovie from '../../../controller/movie';
 
 declare module 'egg' {
   interface IController {
     home: ExportHome;
+    movie: ExportMovie;
   }
 }

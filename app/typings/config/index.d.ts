@@ -3,7 +3,7 @@
 
 import 'egg';
 import { EggAppConfig } from 'egg';
-import ExportConfigDefault from '../../config/config.default';
+import ExportConfigDefault from '../../../config/config.default';
 type ConfigDefault = ReturnType<typeof ExportConfigDefault>;
 declare module 'egg' {
   type NewEggAppConfig = ConfigDefault;
